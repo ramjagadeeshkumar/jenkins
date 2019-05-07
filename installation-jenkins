@@ -1,0 +1,51 @@
+
+#Create a Ubuntu linux vm
+#install Openjdk 8
+       sudo apt-get update
+       sudo apt install openjdk-8-jdk -y
+     java -version
+# set JAVA_HOME Environment variable
+       sudo nano /etc/environment
+      JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/"
+# save the file
+source /etc/environment
+
+
+#install jenkins
+
+     sudo apt-get update
+
+     wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+
+     sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+     sudo apt-get update
+
+     sudo apt-get install jenkins
+
+# open the browser  https://ipadress:8080
+
+     sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+#copy the password from the vm paste it browser
+
+#install all pug-ins and Create user and password for security 
+
+#now installation completed
+
+
+# sample : free style project 
+
+     project name "hellow word"
+# now check the built 
+     select the shell execute shell
+
+# command 
+     
+     echo "hellow word"
+     pwd (present working directory)
+     whoiam (telling about working application)
+# now click the built now
+# checking console out put
+
+
